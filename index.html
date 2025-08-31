@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es"></html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title> Alis Shelter</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 
         <ul class="vinculos">
             <li><a href="#inicio"> Sobre nosotros</a></li>
-            <li><a href="#cuestionario"> Cuestionario</a></li>
+            <li><a href="#contactanos"> Contáctanos</a></li>
             <li><a href="#galeria"> Galería</a></li>
         </ul>
     </nav>
@@ -48,19 +48,30 @@
     <p> La <b>visión</b> de nuestra organización es poder salvar y dar en adopción una gran cantidad de animales a través de trabajo voluntario.
 </section>
 
-<section id="cuestionario">
+<section id="contactanos">
     <h2> Contáctanos</h2>
+    <form action="formulario" method="post">
     <p> Para información adicional, deja aquí lo siguiente:</p>
+
+    <div>
         <label for="nombre"> Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
         <br>
-        <label for="gmail"> Email:</label>
+    </div>
+    <div>
+        <label for="correo"> Email:</label>
         <input type="email" id="correo" name="correo" required>
         <br>
+    </div>
+    <div>
         <label for="mensaje"> Mensaje:</label>
-        <textarea name="mensaje" id="mensaje"></textarea>
-        <button onclick="alert('Esta parte esta bajo construcción. Vuelva después cuando ya se halla terminado.')"> Enviar</button>
+        <textarea id="mensaje" name="mensaje"></textarea>
+
+    </div>
+
+    <button type="button"> Enviar</button>
     </form>
+
 </section>
 
 <br>
@@ -77,16 +88,17 @@
         <div class="galeria1">
         <div class="fotos"> <iframe width="560" height="315" src="https://www.youtube.com/embed/iXrLLFUoV9k?si=pB5F4B9z6p_39xFf&amp;start=175" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
         <div class="desc">
-            <p class="parafo"> "Abogada Alexandra Lúgaro hablando<br>sobre el maltrato animal en Puerto Rico "</p>
+            <p class="parafo"> "Abogada Alexandra Lúgaro hablando<br>sobre el maltrato animal en Puerto Rico"</p>
         </div>
     </div>
 </section>
 
-<hr style="width:0">
+<hr style="width:0%">
 
 <section>
     <footer> ©2025 Alis Shelter. Todos los derechos reservados.<br>ariadneolmob@gmail.com<br>(787) 999-9999</footer>
 </section>
 
 </body>
+<script src="javascript.js" defer></script>
 <html>
